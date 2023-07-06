@@ -1,0 +1,35 @@
+.container {
+    background-color: #242020da;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url("../../assets/images/background.jpg");
+    background-blend-mode: multiply;
+}
+
+.addContainer {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    background: #242020;
+    width: 150px;
+    height: 70px;
+    padding: 0px 15px;
+    margin: 15px;
+    border-radius: 50px;
+
+
+}
+
+.addContainer h1 {
+    color: #fff;
+    margin: 0 15px 10px;
+    
+}
+
+.addIcon {
+    cursor: pointer;
+    width: 60px;
+
+}

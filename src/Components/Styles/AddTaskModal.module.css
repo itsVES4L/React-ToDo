@@ -1,0 +1,103 @@
+.modal {
+
+    position: fixed;
+    width: 500px;
+    height: fit-content;
+    z-index: 1040;
+    top: 30%;
+    left: 30%;
+    background-color: #242020;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    transition: all 0.3s ease;
+
+
+}
+
+.backdrop {
+
+    position: fixed;
+    z-index: 1040;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    opacity: 0.5;
+}
+
+.boxModal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+    /* padding: 10px; */
+}
+
+.boxModal input {
+    outline: none;
+    height: 40px;
+    border: none;
+    width: 450px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #353131c5;
+    color: white;
+
+
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 250px;
+    height: 40px;
+    margin: 10px;
+    /* background: #000; */
+}
+
+.modalTasksContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #ffffff7b;
+    padding-left: 70px;
+}
+
+.modalTasksContainer p {
+    width: fit-content;
+    height: fit-content;
+    margin: 10px 0 0 0;
+
+}
+
+.buttonContainer button {
+    color: #FFBF00;
+    border-radius: 5px;
+    width: 100px;
+    font-weight: 900;
+    height: 30px;
+    border: none;
+    background: none;
+    transition: all 0.3s ease;
+
+
+}
+
+.buttonContainer button:hover {
+    background: #353131c5;
+    box-shadow: 0 2px 5px inset rgba(0, 0, 0, 0.5);
+
+}
+
+.boxModal input:focus {
+    box-shadow: 0 2px 5px inset rgba(0, 0, 0, 0.5);
+
+}
