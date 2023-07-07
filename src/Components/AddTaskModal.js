@@ -11,7 +11,7 @@ const renderBackdrop = (props) => (
   <div className={styles.backdrop} {...props} />
 );
 
-const AddTaskModal = () => {
+const AddTaskModal = ({ addTodo }) => {
   const showModal = useContext(showContext);
   const setShowModal = useContext(setShowContext);
 
@@ -19,10 +19,14 @@ const AddTaskModal = () => {
   const [inputValue, setInputValue] = useState("");
 
   const addTasks = (task) => {
-    setModalTasks([...modalTasks, { task: task, completed: false }]);
+    setModalTasks([
+      ...modalTasks,
+      { task: task, completed: false, isEditing: false },
+    ]);
   };
 
   const closeHandler = () => {
+    addTodo(modalTasks);
     setShowModal(false);
     setModalTasks([]);
     setInputValue("");

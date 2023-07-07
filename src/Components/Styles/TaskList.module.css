@@ -1,0 +1,36 @@
+.tasksContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    min-width: 300px;
+    min-height: 100px;
+    transition: all 0.3s ease;
+    background: #242020;
+    padding: 15px 0 35px 0px;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+    
+}
+
+h3{
+    color: #ffffff53;
+    user-select: none;
+}
+.completedButton{
+   
+    position: absolute;
+    bottom: 15px;
+    right: 5px;
+    color: #FFBF00;
+    border-radius: 5px;
+    width: 100px;
+    font-weight: 900;
+    height: 30px;
+    border: none;
+    background: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+}

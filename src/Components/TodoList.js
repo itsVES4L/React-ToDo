@@ -1,5 +1,5 @@
-import React, { useContext } from "react";
-import Tasks from "./Tasks";
+import React, { useContext, useState } from "react";
+import TaskList from "./TaskList";
 
 //Icon
 import AddIcon from "../assets/Icons/Add.svg";
@@ -20,10 +20,10 @@ const TodoList = () => {
             className={styles.addIcon}
             src={AddIcon}
           />
-          <h1> Tasks </h1>
+          <h1> TODO </h1>
         </div>
-        <div>
-          <Tasks />
+        <div className={styles.taskContainer}>
+          <TaskList />
         </div>
       </div>
     </>

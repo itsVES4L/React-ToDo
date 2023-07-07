@@ -4,6 +4,9 @@
     min-height: 100vh;
     background-image: url("../../assets/images/background.jpg");
     background-blend-mode: multiply;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .addContainer {
@@ -15,7 +18,7 @@
     background: #242020;
     width: 150px;
     height: 70px;
-    padding: 0px 15px;
+    padding: 0px 25px 0px 15px;
     margin: 15px;
     border-radius: 50px;
 
@@ -24,12 +27,20 @@
 
 .addContainer h1 {
     color: #fff;
-    margin: 0 15px 10px;
-    
+    margin: 0 10px 8px;
+
 }
 
 .addIcon {
     cursor: pointer;
     width: 60px;
 
+}
+
+.taskContainer {
+    display: flex;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    
 }
