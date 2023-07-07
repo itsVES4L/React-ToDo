@@ -2,22 +2,24 @@
     display: flex;
     flex-direction: row;
     margin-bottom: 10px;
-    width: 200px;
+    width: 300px;
     padding: 5px;
     position: relative;
     right: 25px;
-    overflow: unset;
+    overflow: hidden;
 }
 
-.container p {
+ p {
+    width: 250px;
     margin-left: 10px;
     margin-bottom: 5px;
     font-weight: 500;
-    transition: all 0.6s ease-in;
+    transition: all 0.6s ease-in !important; 
 
 }
 
 .completed {
+   
     text-decoration: line-through;
     color: rgba(255, 255, 255, 0.393);
 }
@@ -25,7 +27,7 @@
 
 .container input {
     accent-color: #FFBF00;
-    transition: all 0.6s ease-in;
+    transition: all 0.2s ease-in;
 
 
 }
@@ -33,4 +35,22 @@
 .container input:checked {
     accent-color: rgba(123, 69, 69, 0.322);
     opacity: 0.3;
+}
+
+
+.taskContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: all 0.6s ease-in;
+
+}
+
+.icon {
+    position: absolute;
+    right: 0px;
+    width: 18px;
+    float: right;
+    margin-left: 10px;
+    cursor: pointer;
 }

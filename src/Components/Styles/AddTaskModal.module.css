@@ -13,6 +13,7 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     padding: 10px;
     transition: all 0.3s ease;
+    overflow: hidden;
 
 
 }
@@ -72,7 +73,7 @@
 }
 
 .modalTasksContainer p {
-    width: fit-content;
+    width: 200px;
     height: fit-content;
     margin: 10px 0 0 0;
 
